@@ -1,0 +1,27 @@
+---
+- hosts: linux
+
+  tasks: 
+  - name: "playing with values {{ test }}"  
+    debug: 
+      var: test
+  
+  - name: "playing with list's "
+    debug: 
+      var: list_test
+
+  - name: "playing with dict's"
+    debug: 
+      var: dict_test
+
+  - name: "playing with data structures printing the name"
+    debug: 
+      var: test1.name
+
+  - name: "playing with data structure printing the likes"
+    debug:
+      var: test1.likes
+
+  - name: "playing with data structure printing the likes item number 2"
+    debug: 
+      var: test1.likes[1]

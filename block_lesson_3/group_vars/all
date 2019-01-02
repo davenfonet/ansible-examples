@@ -1,0 +1,14 @@
+test: "a basic variable"
+list_test:
+  - package1
+  - package2 
+  - package3
+dict_test: 
+  - { name: 'person1', uid: '123456'}
+  - { name: 'person2', uid: '223456'}
+test1:
+    name: 'Creator'
+    likes:
+      - 'ansible'
+      - 'beer'
+      - "japan cartoons" 
