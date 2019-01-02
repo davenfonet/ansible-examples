@@ -1,0 +1,25 @@
+---
+- name: "Playing with Variables"
+  hosts: linux
+  become: true
+
+  tasks: 
+  - name: "playing with values {{ test }}"  
+    debug: 
+      var: test
+  
+  - name: "playing with list's {{ list-test }}"
+    debug: 
+      var: list-test
+
+  - name: "playing with dict's {{ dict }}"
+    debug: 
+      var: dict
+
+  - name: "playing with data structures {{ test1.name }}"
+    debug: 
+      var: test1.name
+
+  - name: "playing with data  structures2"
+    debug: 
+      var: test1.likes
